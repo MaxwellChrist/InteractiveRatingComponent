@@ -71,7 +71,6 @@ body {
     grid-row: 3 / 4;
 }
 .rating-state-form {
-
     display: grid;
     grid-column: 2 / 3;
     grid-row: 4 / 6;
@@ -131,7 +130,7 @@ body {
     padding: 10px;
 }
 
-input[type="button"].rating-state-btn-num:hover {
+button.rating-state-btn-num:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(216, 12%, 54%);
 }

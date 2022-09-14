@@ -29,8 +29,10 @@ body {
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
     justify-content: center;
     align-content: center;
+    padding: 20px 0;
 
-    background-color: hsl(213, 19%, 18%)
+    background-color: hsl(213, 19%, 18%);
+    gap: 10px;
 }
 
 .rating-state .rating-state-svg {
@@ -55,18 +57,21 @@ body {
     grid-row: 3 / 4;
 }
 .rating-state-form {
+
+    display: grid;
     grid-column: 2 / 3;
     grid-row: 4 / 6;
-    display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
     gap: 10px;
 }
 
 .rating-state-btn-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    color: hsl(217, 12%, 63%)
+    color: hsl(217, 12%, 63%);
 }
 
 .rating-state-btn-2 {
@@ -92,8 +97,11 @@ body {
 .rating-state-btn-submit{
     grid-column: 1 / -1;
     grid-row: 2 / -1;
+    min-width: 250px;
+    border-radius: 20px;
 }
 
 .rating-state-btn-num{
     border-radius: 100%;
+    width: 35px;
 }

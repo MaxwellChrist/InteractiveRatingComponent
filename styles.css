@@ -1,0 +1,99 @@
+* {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%)
+}
+
+/* Initial State */
+.thank-you-state {
+    display: none;
+    background-color: hsl(213, 19%, 18%)
+}
+
+.rating-state {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+
+    display: grid;
+    width: 90%;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+
+    background-color: hsl(213, 19%, 18%)
+}
+
+.rating-state .rating-state-svg {
+    grid-column: 2 / 3;
+    grid-row: 1/ 2;
+    justify-content: start;
+    background-color: hsl(213, 19%, 18%)
+}
+
+.rating-state-h1 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    color: hsl(0, 0%, 100%)
+}
+
+.rating-state-p, .rating-state-btn-1, .rating-state-btn-2, .rating-state-btn-3, .rating-state-btn-4, .rating-state-btn-5 {
+    color: hsl(217, 12%, 63%)
+}
+
+.rating-state-p {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.rating-state-form {
+    grid-column: 2 / 3;
+    grid-row: 4 / 6;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.rating-state-btn-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: hsl(217, 12%, 63%)
+}
+
+.rating-state-btn-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.rating-state-btn-3 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.rating-state-btn-4 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.rating-state-btn-5{
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.rating-state-btn-submit{
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+}
+
+.rating-state-btn-num{
+    border-radius: 100%;
+}

@@ -130,7 +130,7 @@ body {
     padding: 10px;
 }
 
-button.rating-state-btn-num:hover {
+.rating-state-btn-num:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(216, 12%, 54%);
 }

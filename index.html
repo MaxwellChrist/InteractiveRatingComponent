@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="./styles.css" />
-  <script src="index.js" type="application/javascript" defer></script>
+  <script src="./index.js" type="application/javascript" defer></script>
   <title>Frontend Mentor | Interactive rating component</title>
   <style>
     .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0 }
@@ -26,11 +26,11 @@
     <p class="rating-state-p">Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!</p>
     <form class="rating-state-form">
-      <input class="rating-state-btn-num rating-state-btn-1" type="button" value="1" />
-      <input class="rating-state-btn-num rating-state-btn-2" type="button" value="2" />
-      <input class="rating-state-btn-num rating-state-btn-3" type="button" value="3" />
-      <input class="rating-state-btn-num rating-state-btn-4" type="button" value="4" />
-      <input class="rating-state-btn-num rating-state-btn-5" type="button" value="5" />
+      <input class="rating-state-btn-num rating-state-btn-1" type="button" value="1" onclick="findRating()"/>
+      <input class="rating-state-btn-num rating-state-btn-2" type="button" value="2" onclick="findRating()"/>
+      <input class="rating-state-btn-num rating-state-btn-3" type="button" value="3" onclick="findRating()"/>
+      <input class="rating-state-btn-num rating-state-btn-4" type="button" value="4" onclick="findRating()"/>
+      <input class="rating-state-btn-num rating-state-btn-5" type="button" value="5" onclick="findRating()"/>
       <input class="rating-state-btn-submit" type="submit" value="Submit">
     </form>
   </div>

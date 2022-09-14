@@ -54,7 +54,8 @@ body {
 .rating-state-h1 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    color: hsl(0, 0%, 100%)
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
 }
 
 .rating-state-p, .rating-state-btn-num {
@@ -114,6 +115,7 @@ body {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     padding: 10px 0;
+    cursor: pointer;
 }
 
 .rating-state-btn-submit:hover {

@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: hsl(216, 12%, 8%)
+    background-color: hsl(228, 20%, 10%)
 }
 
 /* Initial State */
@@ -31,15 +31,24 @@ body {
     align-content: center;
     padding: 20px 0;
 
-    background-color: hsl(213, 19%, 18%);
+    background: hsl(221, 32%, 20%);
     gap: 10px;
 }
 
-.rating-state .rating-state-svg {
+.rating-state-svg {
     grid-column: 2 / 3;
     grid-row: 1/ 2;
-    justify-content: start;
-    background-color: hsl(213, 19%, 18%)
+    align-self: start;
+    background-color: hsl(212, 30%, 22%);
+    cursor: pointer;
+    width: 35px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.rating-state-svg svg {
+    display: block;
+    margin: auto;
 }
 
 .rating-state-h1 {
@@ -48,8 +57,12 @@ body {
     color: hsl(0, 0%, 100%)
 }
 
-.rating-state-p, .rating-state-btn-1, .rating-state-btn-2, .rating-state-btn-3, .rating-state-btn-4, .rating-state-btn-5 {
+.rating-state-p, .rating-state-btn-num {
     color: hsl(217, 12%, 63%)
+}
+
+.rating-state-btn-num, .rating-state-btn-submit {
+    border: none;
 }
 
 .rating-state-p {
@@ -65,13 +78,12 @@ body {
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .rating-state-btn-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    color: hsl(217, 12%, 63%);
 }
 
 .rating-state-btn-2 {
@@ -99,9 +111,25 @@ body {
     grid-row: 2 / -1;
     min-width: 250px;
     border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    padding: 10px 0;
 }
 
-.rating-state-btn-num{
+.rating-state-btn-submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+.rating-state-btn-num {
+    cursor: pointer;
     border-radius: 100%;
     width: 35px;
+    background-color: hsl(212, 30%, 22%);
+    padding: 10px;
+}
+
+input[type="button"].rating-state-btn-num:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(216, 12%, 54%);
 }

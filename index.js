@@ -9,30 +9,30 @@ buttonRatings.forEach(item => {
     item.addEventListener("click", findRating, false)
 })
 function findRating(e) {
-    if (ratingElement !== e.target) {
-        rating = e.target.value
-        ratingElement = e.target
-        ratingElement.style.backgroundColor = "hsl(25, 97%, 53%)"
-        ratingElement.style.color = "hsl(0, 0%, 100%)"
-    }
+    rating = e.target.value
+    ratingElement = e.target
     buttonRatings.forEach(item => {
-        if (item.value !== rating) {
+        if (item.value !== e.target.value) {
             item.style.backgroundColor = "hsl(212, 30%, 22%)"
             item.style.color = "hsl(217, 12%, 63%)"
-            item.addEventListener('mouseenter', enter)
-            item.addEventListener('mouseleave', leave)
+
+            item.addEventListener('mouseenter', (e) => {
+                e.target.style.backgroundColor = 'hsl(216, 12%, 54%)';
+                e.target.style.color = 'hsl(0, 0%, 100%)';
+            })
+            item.addEventListener('mouseleave', (e) => {
+                e.target.style.backgroundColor = 'hsl(212, 30%, 22%);';
+                e.target.style.color = 'hsl(217, 12%, 63%)';
+            })
+        } else {
+            item.style.backgroundColor = "hsl(25, 97%, 53%)"
+            item.style.color = "hsl(0, 0%, 100%)"
         }
     })
-}
-
-function enter(e) {
-    e.target.style.backgroundColor = 'hsl(216, 12%, 54%)'
-    e.target.style.color = 'hsl(0, 0%, 100%)'
-}
-
-function leave(e) {
-    e.target.style.backgroundColor = 'hsl(212, 30%, 22%)'
-    e.target.style.color = 'hsl(217, 12%, 63%)'
+    if (ratingElement !== e.target) {
+        ratingElement.style.backgroundColor = "hsl(25, 97%, 53%)"
+        ratingElement.style.color = "hsl(0, 0%, 100%)"
+    } 
 }
 
 // functions for the submitting of the form to be completed without loading the page and to display the new state

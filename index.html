@@ -11,7 +11,7 @@
   <script src="./index.js" type="application/javascript" defer></script>
   <title>Frontend Mentor | Interactive rating component</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0 }
+    .attribution { color: white; font-size: 11px; text-align: center; position: fixed; bottom: 0 }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
@@ -38,14 +38,16 @@
 
   <!-- Thank you state start -->
   <div id="currentState" class="thank-you-state">
-      <img class="thank-you-state-img" src="./images/illustration-thank-you.svg" alt="Image saying thank you">
+      <div class="thank-you-state-img">
+        <img src="./images/illustration-thank-you.svg" alt="Image saying thank you" />
+      </div>
       <p class="thank-you-state-p1">You selected <span class="thank-you-state-span"></span> out of 5</p>
       <h1 class="thank-you-state-h1">Thank you!</h1>
       <p class="thank-you-state-p2">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
-    </div>
+  </div>
     <!-- Thank you state end -->
 
-    <div class="attribution">
+  <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://github.com/MaxwellChrist/InteractiveRatingComponent">Max Christ</a>.
   </div>

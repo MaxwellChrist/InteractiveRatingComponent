@@ -9,6 +9,7 @@
 body {
     background-color: hsl(228, 20%, 10%)
 }
+
 /* Display class to toggle states */
 #currentState {
     display: none;
@@ -27,7 +28,6 @@ body {
     transform: translate(-50%, -50%);
     margin: 0 auto;
     background: hsl(221, 32%, 20%);
-    gap: 10px;
     border-radius: 20px;
     max-width: 337px;
 }
@@ -35,6 +35,7 @@ body {
 /* Initial State */
 .rating-state{
     grid-template-rows: 1fr 1fr 2fr 1fr 1fr;
+    gap: 10px;
 }
 
 .rating-state-img {
@@ -142,28 +143,36 @@ body {
 /* Thank you state */
 
 .thank-you-state {
-    grid-template-rows: 2fr 1fr 1fr 2fr;
+    grid-template-rows: 2fr 0.75fr 0.75fr 0.75fr;
     justify-items: center;
     align-items: center;
+    gap: 10px;
 }
 
-.thank-you-state-svg {
+.thank-you-state-img {
     grid-column: 2 / 3;
     grid-row: 1/ 2;
-    padding: 10px;
+    margin-top: 30px;
     min-height: 150px;
-    min-width: 225px;
+    min-width: 250px;
 } 
 
-.thank-you-state-svg svg {
+.thank-you-state-img img {
     display: block;
     margin: auto;
+    height: 125px;
+}
+
+.thank-you-state-p1, .thank-you-state-p1 span {
+    color: hsl(25, 97%, 53%);
 }
 
 .thank-you-state-p1 {
-    color: hsl(217, 12%, 63%);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    background-color: hsl(212, 30%, 22%);
+    border-radius: 30px;
+    padding: 10px 20px;
 }
 
 .thank-you-state-span {
@@ -183,6 +192,7 @@ body {
     color: hsl(217, 12%, 63%);
     grid-column: 2 / 3;
     grid-row: 4 / 5;
+    margin-bottom: 30px;
 }
 
 @media screen and (min-width: 600px) {
@@ -193,7 +203,9 @@ body {
         align-items: center;
     }
 
-    .rating-state, .thank-you-state {
+    /* Rating state */
+
+    .rating-state {
         grid-template-rows: 1fr .6fr 1fr 1fr 1fr;
         gap: 30px;
     }
@@ -239,5 +251,24 @@ body {
     
     .rating-state-p, .rating-state-btn-num {
         font-size: 1.5rem;
+    }
+
+    /* Thank you state */
+
+    .thank-you-state-img {
+        min-height: 200px;
+        min-width: 300px;
+    } 
+
+    .thank-you-state-img img {
+        height: 200px;
+    }
+
+    .thank-you-state-p1, .thank-you-state-p1 span, .thank-you-state-p2 {
+        font-size: 1.5rem;
+    }
+
+    .thank-you-state-h1 {
+        font-size: 2.5rem;
     }
 }

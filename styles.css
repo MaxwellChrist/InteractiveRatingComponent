@@ -114,7 +114,7 @@ body {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     padding: 10px 0;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .rating-state-btn-submit:hover {
@@ -123,14 +123,19 @@ body {
 }
 
 .rating-state-btn-num {
-    /* cursor: pointer; */
+    cursor: pointer;
     border-radius: 100%;
     width: 35px;
     background-color: hsl(212, 30%, 22%);
     padding: 10px;
 }
 
-.rating-state-btn-num:hover {
+.rating-state-btn-hover:hover {
     color: hsl(0, 0%, 100%);
     background-color: hsl(216, 12%, 54%);
+}
+
+.active {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
 }
